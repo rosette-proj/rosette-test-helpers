@@ -5,19 +5,19 @@ module Rosette
 
     module Test
       class TestSerializer < Rosette::Serializers::Serializer
-        def write_translation(trans)
-          key = sanitize(trans.phrase.key)
-          trans = sanitize(trans.translation)
-          stream.write("#{key} = #{trans}\n")
+        def self.default_extension
+          '.txt'
+        end
+
+        def write_key_value(key, value)
+          stream.write("#{key} = #{value}\n")
+        end
+
+        def write_raw(text)
+          stream.write(text)
         end
 
         def close
-        end
-
-        private
-
-        def sanitize(str)
-          str.gsub(%q("), %q(\"))
         end
       end
     end
