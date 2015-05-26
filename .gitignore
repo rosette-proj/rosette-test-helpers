@@ -4,3 +4,4 @@ Jarfile.lock
 pkg/
 .jbundler/
 .ruby-version
+lib/rosette/fixtures/repos/bin
