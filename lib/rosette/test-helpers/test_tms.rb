@@ -1,6 +1,7 @@
 # encoding: UTF-8
 
 require 'digest/sha1'
+require 'rosette/tms'
 
 module Rosette
   module Tms

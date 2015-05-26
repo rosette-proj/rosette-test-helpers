@@ -1,5 +1,7 @@
 # encoding: UTF-8
 
+require 'rosette/queuing'
+
 module Rosette
   module Queuing
     module TestQueue

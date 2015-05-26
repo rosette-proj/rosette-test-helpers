@@ -1,15 +1,16 @@
 # encoding: UTF-8
 
-require 'rosette/test_helpers/test_extractor'
-require 'rosette/test_helpers/test_serializer'
-require 'rosette/test_helpers/test_integration'
-require 'rosette/test_helpers/test_data_store'
-require 'rosette/test_helpers/test_queue'
-require 'rosette/test_helpers/test_tms'
-require 'rosette/test_helpers/null_logger'
-require 'rosette/test_helpers/fake_commit_stage'
-require 'rosette/test_helpers/fixture'
-require 'rosette/test_helpers/fixture_phrase_commit'
+require 'rosette/test-helpers/test_extractor'
+require 'rosette/test-helpers/test_serializer'
+require 'rosette/test-helpers/test_integration'
+require 'rosette/test-helpers/test_data_store'
+require 'rosette/test-helpers/test_queue'
+require 'rosette/test-helpers/test_tms'
+require 'rosette/test-helpers/null_logger'
+require 'rosette/test-helpers/fake_commit_stage'
+require 'rosette/test-helpers/fixture'
+require 'rosette/test-helpers/fixtures'
+require 'rosette/test-helpers/fixture_phrase_commit'
 
 module Rosette
   module TestHelpers
