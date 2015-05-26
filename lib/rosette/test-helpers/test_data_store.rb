@@ -1,5 +1,7 @@
 # encoding: UTF-8
 
+require 'rosette/data_stores'
+
 module Rosette
   module DataStores
 

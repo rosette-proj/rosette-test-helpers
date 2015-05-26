@@ -1,5 +1,7 @@
 # encoding: UTF-8
 
+require 'rosette/integrations'
+
 module Rosette
   module Integrations
 

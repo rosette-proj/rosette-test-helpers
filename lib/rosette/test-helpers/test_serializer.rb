@@ -1,5 +1,7 @@
 # encoding: UTF-8
 
+require 'rosette/serializers'
+
 module Rosette
   module Serializers
 
