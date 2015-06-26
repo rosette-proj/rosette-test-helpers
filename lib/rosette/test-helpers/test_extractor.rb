@@ -1,5 +1,7 @@
 # encoding: UTF-8
 
+require 'rosette/core'
+
 module Rosette
   module Extractors
 
