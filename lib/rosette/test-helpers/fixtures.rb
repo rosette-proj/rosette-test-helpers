@@ -41,6 +41,10 @@ module Rosette
           fixture_registry.clear
         end
 
+        def fixture_registry
+          @fixture_registry ||= []
+        end
+
         private
 
         def load_properties_file(fixture_name)
@@ -54,10 +58,6 @@ module Rosette
               yield config, repo if block_given?
             end
           end
-        end
-
-        def fixture_registry
-          @fixture_registry ||= []
         end
 
         def fixture_path
