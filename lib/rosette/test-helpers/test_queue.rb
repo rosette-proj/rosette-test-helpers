@@ -6,6 +6,9 @@ module Rosette
   module Queuing
     module TestQueue
 
+      class Configurator
+      end
+
       class Queue
         class << self
           def list
@@ -17,7 +20,10 @@ module Rosette
           end
         end
 
-        def initialize(options = {})
+        attr_reader :configurator
+
+        def initialize(configurator)
+          @configurator = configurator
         end
 
         def enqueue(job)
