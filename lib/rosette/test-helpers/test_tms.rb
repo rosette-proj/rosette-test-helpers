@@ -34,11 +34,11 @@ module Rosette
           clear
         end
 
-        def store_phrases(phrases, commit_id, granularity = PhraseStorageGranularity::COMMIT)
+        def store_phrases(phrases, commit_id)
           stored_phrases[commit_id] += phrases
         end
 
-        def store_phrase(phrase, commit_id, granularity = PhraseStorageGranularity::COMMIT)
+        def store_phrase(phrase, commit_id)
           stored_phrases[commit_id] << phrase
         end
 
